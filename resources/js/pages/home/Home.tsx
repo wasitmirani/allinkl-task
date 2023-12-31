@@ -54,7 +54,7 @@ const Home: React.FC = () => {
 
             const chartData = [
                 sort_keys,  // Assuming keys_ is an array of strings
-                ...map_data.slice(1).map(row => row.map(value => {
+                ...map_data.slice(1).map(row => row.map((value:any) => {
                     // Check if the value is a string, date, or numeric string
                     if (typeof value === 'string') {
                         // Check if it's a date
